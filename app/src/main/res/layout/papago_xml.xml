@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/setInLng_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#000000"
+                    android:text="한국어"
+                    android:textSize="20sp"/>
+
+                <Button
+                    android:id="@+id/setOutLng_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#000000"
+                    android:text="영어"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+                <EditText
+                    android:id="@+id/inContent_et"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:text="안녕하세요"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:maxLength="100"/>
+                <TextView
+                    android:id="@+id/outContent_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#2E9AF1"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:text="Hello"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:maxLength="100"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/translator_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="번역 하기"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+    <LinearLayout
+        android:id="@+id/setInLnglist"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#9261EA"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/inKo_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="한국어"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/inEn_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="영어"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/inCn_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="중국어 간체"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/inTw_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="중국어 번체"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/inEs_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="스페인어"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/inFr_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="프랑스어"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/inVi_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="베트남어"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/inTh_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="태국어"
+            android:textSize="20sp"/>
+        <Button
+            android:id="@+id/inIn_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="인도네시아어"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/setOutLnglist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#9261EA"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <Button
+                android:id="@+id/outKo_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="한국어"
+                android:textSize="20sp"/>
+            <Button
+                android:id="@+id/outEn_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="영어"
+                android:textSize="20sp"/>
+            <Button
+                android:id="@+id/outCn_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="중국어 간체"
+                android:textSize="20sp"/>
+            <Button
+                android:id="@+id/outTw_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="중국어 번체"
+                android:textSize="20sp"/>
+            <Button
+                android:id="@+id/outEs_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="스페인어"
+                android:textSize="20sp"/>
+            <Button
+                android:id="@+id/outFr_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="프랑스어"
+                android:textSize="20sp"/>
+            <Button
+                android:id="@+id/outVi_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="베트남어"
+                android:textSize="20sp"/>
+            <Button
+                android:id="@+id/outTh_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="태국어"
+                android:textSize="20sp"/>
+            <Button
+                android:id="@+id/outIn_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="인도네시아어"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
+
+</LinearLayout>
+
